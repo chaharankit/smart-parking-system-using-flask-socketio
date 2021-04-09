@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebSocket demo</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+        <script src="{{url_for('static', filename='scripts.js')}}"></script>
+    </head>
+    
+    <body>
+    	
+		    <div class="toper">
+                    
+            </div>
+
+          <div class="flex-container">
+
+            <div class="flex-item-1" id="spot1">SPOT 1
+                <button onclick="reserveSpot(0)">Reserve Spot</button>
+            </div>
+
+            <div class="flex-item-2" id="spot2">SPOT 2
+                <button onclick="reserveSpot(1)">Reserve Spot</button>
+            </div>
+
+            <div class="flex-item-3" id="spot3">SPOT 3
+                <button onclick="reserveSpot(2)">Reserve Spot</button>
+            </div>
+
+            <div class="flex-item-4" id="spot4">SPOT 4
+                <button onclick="reserveSpot(3)">Reserve Spot</button>
+            </div>
+
+            <div class="flex-item-5" id="spot5">SPOT 5
+                <button onclick="reserveSpot(4)">Reserve Spot</button>
+            </div>
+
+            <div class="flex-item-6" id="spot6">SPOT 6
+                <button onclick="reserveSpot(5)">Reserve Spot</button>
+            </div>
+
+    </div>    
+  
+    </body>
+
+</html>
