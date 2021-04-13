@@ -33,7 +33,7 @@ def handler(msg):
 	
 @socketio.on('connected')
 def messageRecived(msg):
-  print( '+++++++++++++NEW CONNECTION HAS BEEN TERMINATED+++++++++++++' )
+  print( '+++++++++++++CONNECTION HAS BEEN TERMINATED+++++++++++++' )
 
 
 if __name__ == '__main__':
