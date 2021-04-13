@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.config[ 'SECRET_KEY' ] = 'secret'
 socketio = SocketIO( app )
 
-def exe():
+def sendData():
 	while True:
 		distance = random.randint(3, 9)
 		if distance > 5:
@@ -29,9 +29,11 @@ def messageRecived(msg):
 
 @socketio.on('send_req')
 def handler(msg):
-	exe()
+	sendData()
 	
-#hellp
+@socketio.on('connected')
+def messageRecived(msg):
+  print( '+++++++++++++NEW CONNECTION HAS BEEN TERMINATED+++++++++++++' )
 
 
 if __name__ == '__main__':
