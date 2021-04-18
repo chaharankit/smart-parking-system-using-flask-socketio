@@ -8,38 +8,85 @@
     </head>
     
     <body>
-    	
-		    <div class="toper">
-                    
-            </div>
+    	<header>
+       <div>
+        <img src="logo.png" alt="Smart Parking System">
+       </div>
+       <div style="margin-left:90px; margin-top:-80px;">
+         <h1 style="color: #EF0D50">Smart Parking System</h1>
+       </div> 
+       <div style="margin-left:840px; margin-top:-50px;">
+         <nav style="font-size:18px;">
+          <a href="index.html" class="first" >Home</a>
+          <a href="contactus.html" class="second">Contact Us</a>
+          <a href="/blog/" class="third">News</a>
+          <a href="about.html" class="fourth">About</a>       
+         </nav>
+       </div>
+      </header>
+      <div class="toper">
+        <img src="cont.jpg" alt="Smart Parking System" style="width: 100%; height: 100%;">
+      </div>
 
-          <div class="flex-container">
+    	<div class="flex-container">
+  			<div class="flex-item-1" id="spot1">
+          SPOT 1
+          <button onclick="reserveSpot(0)">Reserve Spot</button>
+        </div>
+  			<div class="flex-item-2" id="spot2">
+        SPOT 2
+        <button onclick="reserveSpot(1)">Reserve Spot</button>
+        </div>
+  			<div class="flex-item-3" id="spot3">
+        SPOT 3
+        <button onclick="reserveSpot(2)">Reserve Spot</button>
+        </div>
+  			<div class="flex-item-4" id="spot4">
+        SPOT 4
+        <button onclick="reserveSpot(3)">Reserve Spot</button>
+        </div>
+  			<div class="flex-item-5" id="spot5">
+        SPOT 5
+        <button onclick="reserveSpot(4)">Reserve Spot</button>
+        </div>
+  			<div class="flex-item-6" id="spot6">
+        SPOT 6
+        <button onclick="reserveSpot(5)">Reserve Spot</button>
+        </div>
+		</div>
+		
+    <div>
+      <h1>Smart-Parking-System-using-Raspberry-Pi</h1>
+      <p style="font-size: 12px;">IoT enabled smart parking system using raspberry pi and web sockets<br><br>
 
-            <div class="flex-item-1" id="spot1">SPOT 1
-                <button onclick="reserveSpot(0)">Reserve Spot</button>
-            </div>
+      Smart Parking System is a smart interconnected system that makes parking in huge lots easy and more effective. This is made possible by making use of ultrasonic sensors and some clever computation to solve the inefficient and frustrating parking situation we have. When connected to Parking lot's Wi-Fi you'll be notified and then guided to the nearest available parking space removing out the congestion and frustration we endure.<br><br>
 
-            <div class="flex-item-2" id="spot2">SPOT 2
-                <button onclick="reserveSpot(1)">Reserve Spot</button>
-            </div>
+      Using smart parking system is a win-win situation for everyone involved, corporations profit from not only the hassle of routing vehicles, but also save money and time by not employing a large workforce. Consumers on the other hand save time and effort because they can pinpoint an open space within seconds and route themselves there.<br><br>
 
-            <div class="flex-item-3" id="spot3">SPOT 3
-                <button onclick="reserveSpot(2)">Reserve Spot</button>
-            </div>
+      Robustness and modularity were top priorities in setting up smart parking system. Usage of generic modules promote easy maintenance and furtherance. SoC (System-on-a-Chip) that works best for this use case is Raspberry pi, which can handle a lot of sensor modules, and also not mentioning the clear-cut advantages it has to inculcate changes and advancements as opposed to an embedded system.<br><br>
 
-            <div class="flex-item-4" id="spot4">SPOT 4
-                <button onclick="reserveSpot(3)">Reserve Spot</button>
-            </div>
+      The backend of smart parking system is equally robust, with usage of programming language Python to translate the data from the ultrasonic modules to Strings, then APIs like node js are used to implement web sockets to have minimal latency. The data from the sensors will be recorded, analyzed, translated and displayed every 500 milliseconds to avoid any latency issues. A local webserver is used to host the webpage which enormously reduces costs and eases up the complexity. Display of ads or promotions before or after the service can easily cover up a sizeable portion of running cost of this solution increasing the Value many-folds.</p>
+    </div>
 
-            <div class="flex-item-5" id="spot5">SPOT 5
-                <button onclick="reserveSpot(4)">Reserve Spot</button>
-            </div>
-
-            <div class="flex-item-6" id="spot6">SPOT 6
-                <button onclick="reserveSpot(5)">Reserve Spot</button>
-            </div>
-
-    </div>    
+    <footer style="margin-top: 50px; background-color: #659DBD; display: block; padding: 18px 0 40px; width: 112%;">
+      <div>
+        <img src="logo.png" alt="Smart Parking System">
+       </div>
+       <div style="margin-left:250px; margin-top: -80px;">
+         <p>_________________</p>
+         <p>Contact</p>
+         <p>Security</p>
+         <p>Terms & Condition</p>
+         <p>Privacy</p>
+       </div>
+       <div style="margin-left:700px; margin-top: -170px;">
+         <p>_________________</p>
+         <p>555-555-555</p>
+         <p>smartparking@lpu.com</p>
+         <p>Jalandhar Punjab</p>
+         <p>India (144411)</p>
+       </div>
+    </footer>
   
     </body>
 
